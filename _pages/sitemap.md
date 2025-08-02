@@ -83,7 +83,7 @@ author_profile: true
 {% endfor %}
 
 
-<h2>Pages</h2>
+<h2>主页标签</h2>
 {% for post in site.pages %}
   {% include archive-single.html %}
 {% endfor %}
