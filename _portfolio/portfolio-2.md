@@ -1,9 +1,9 @@
 ---
 title: "墙报：具有肿瘤微环境炎症抑制能力的铂（IV）配合物的设计合成及抗肿瘤机制研究"
-excerpt: "北京师范大学化学学院第四届研究生学术会议墙报一等奖<br/><img src='https://infinity-lzj.github.io/Zuojie_Li.github/files/wallpape2.jpg' alt='error'>"
+excerpt: "北京师范大学化学学院第四届研究生学术会议墙报一等奖<br/><img src='https://Zuojie-Li.github.io/files/wallpape2.jpg' alt='error'>"
 collection: portfolio
 ---
 
 铂类药物是癌症治疗中最有效的化疗药物。铂（IV）作为铂（II）的前药，是解决铂类临床用药缺陷最具潜力的策略。非感染性炎症作为肿瘤的主要特征之一，是肿瘤治疗失败的关键因素，在化疗过程中对其进行有效控制，对提高肿瘤患者的存活率及预后疗效具有积极意义。基于此，本研究将抗炎片段酮洛芬、洛索洛芬、扎托洛芬、氟比洛芬引入铂（IV）体系制备系列目标化合物，其在抗肿瘤、抗炎、抗迁移、逆转免疫耐受、克服铂类耐药方面表现出令人满意的结果。此项研究工作将进一步促进多功能铂（IV）的发展，为新型铂类药物的制备开发提供新策略，进而为铂类药物的临床发展贡献力量。
 
-![高清原图在线查看](https://infinity-lzj.github.io/Zuojie_Li.github/files/wallpape2.png "高清原图在线查看")
+![高清原图在线查看](https://Zuojie-Li.github.io/files/wallpape2.png "高清原图在线查看")
