@@ -8,7 +8,7 @@ author_profile: true
 
 
 <h2>Zuojie Li</h2>
-{% for post in site.Zuojie Li %}
+{% for post in site.about %}
   {% include archive-single.html %}
 {% endfor %}
 
