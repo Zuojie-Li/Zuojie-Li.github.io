@@ -19,8 +19,7 @@ author_profile: true
   * 分子动力学模拟
 * 抗肿瘤药物
   * 靶点筛选及分子设计合成
-  * 生物活性测试
-  * 作用机制研究
+  * 生物活性测试及作用机制研究
   * 药物制剂
 * 放射性药物
   * PET
@@ -86,7 +85,9 @@ author_profile: true
 {% endfor %}
 
 
-<h2>主页标签</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+
+
+
+
+
+[更多详情见个人主页](https://zuojie-li.github.io/)
