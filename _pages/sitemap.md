@@ -1,23 +1,13 @@
 ---
 layout: archive
-title: "sitemap"
+title: "Sitemap"
 permalink: /sitemap/
 author_profile: true
 ---
 
 
 
-<h2>Zuojie Li</h2>
-{% for post in site.about %}
-  {% include archive-single.html %}
-{% endfor %}
 
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
   <h2>{{ label }}</h2>
   {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
