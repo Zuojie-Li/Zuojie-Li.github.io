@@ -6,7 +6,7 @@ permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: ''
 date: 2025-04-28
 venue: '第十七届全国放射性药物与标记化合物学术交流会,西安'
-paperurl: 'https://infinity-lzj.github.io/Zuojie_Li.github/files/paper2.pdf'
+paperurl: 'https://Zuojie-Li.github.io/files/paper2.pdf'
 citation: '李作杰, 张俊波.'
 ---
 
