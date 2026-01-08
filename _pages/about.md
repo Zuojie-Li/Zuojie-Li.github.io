@@ -56,12 +56,12 @@ redirect_from:
     
     <!-- 图片2：带超链接 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link2" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example2.jpg" alt="图片描述2" 
+          <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
                style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
         </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题2</p>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2024,67(23),21617-21628.</p>
       </a>
     </div>
     
@@ -101,23 +101,23 @@ redirect_from:
     <!-- 重要：以下重复上面的5个图片块以实现无缝滚动效果 -->
     <!-- 重复图片1 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link1" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example1.jpg" alt="图片描述1" 
+          <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="J Med Chem. 2025,ASAP" 
                style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
         </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题1</p>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2025,ASAP</p>
       </a>
     </div>
     
     <!-- 重复图片2 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link2" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example2.jpg" alt="图片描述2" 
+          <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
                style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
         </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题2</p>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2024,67(23),21617-21628.</p>
       </a>
     </div>
     
