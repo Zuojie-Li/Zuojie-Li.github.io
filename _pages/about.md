@@ -229,4 +229,3 @@ redirect_from:
 }
 </style>
 
-</style>
