@@ -56,6 +56,28 @@ redirect_from:
     
     <!-- 图片2：带超链接 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c02789" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+          <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="J Med Chem. 2025,68(21),23620-23631." 
+               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
+        </div>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2025,68(21),23620-23631.</p>
+      </a>
+    </div>
+    
+    <!-- 图片3：带超链接 -->
+    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01608" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+          <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="J Med Chem. 2024,67(24),21644-21670." 
+               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
+        </div>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2024,67(24),21644-21670.</p>
+      </a>
+    </div>
+    
+    <!-- 图片4：带超链接 -->
+    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
           <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
@@ -65,36 +87,14 @@ redirect_from:
       </a>
     </div>
     
-    <!-- 图片3：带超链接 -->
-    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link3" target="_blank" style="text-decoration: none; color: inherit;">
-        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example3.jpg" alt="图片描述3" 
-               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
-        </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题3</p>
-      </a>
-    </div>
-    
-    <!-- 图片4：带超链接 -->
-    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link4" target="_blank" style="text-decoration: none; color: inherit;">
-        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example4.jpg" alt="图片描述4" 
-               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
-        </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题4</p>
-      </a>
-    </div>
-    
     <!-- 图片5：带超链接 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link5" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example5.jpg" alt="图片描述5" 
+          <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
                style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
         </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题5</p>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2021,64(24),17920-17935.</p>
       </a>
     </div>
     
@@ -112,6 +112,28 @@ redirect_from:
     
     <!-- 重复图片2 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c02789" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+          <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="J Med Chem. 2025,68(21),23620-23631." 
+               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
+        </div>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2025,68(21),23620-23631.</p>
+      </a>
+    </div>
+    
+    <!-- 重复图片3 -->
+    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01608" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+          <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="J Med Chem. 2024,67(24),21644-21670." 
+               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
+        </div>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2024,67(24),21644-21670.</p>
+      </a>
+    </div>
+    
+    <!-- 重复图片4 -->
+    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
           <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
@@ -121,36 +143,14 @@ redirect_from:
       </a>
     </div>
     
-    <!-- 重复图片3 -->
-    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link3" target="_blank" style="text-decoration: none; color: inherit;">
-        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example3.jpg" alt="图片描述3" 
-               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
-        </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题3</p>
-      </a>
-    </div>
-    
-    <!-- 重复图片4 -->
-    <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link4" target="_blank" style="text-decoration: none; color: inherit;">
-        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example4.jpg" alt="图片描述4" 
-               style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
-        </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题4</p>
-      </a>
-    </div>
-    
     <!-- 重复图片5 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link5" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example5.jpg" alt="图片描述5" 
+          <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
                style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
         </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题5</p>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2021,64(24),17920-17935.</p>
       </a>
     </div>
   </div>
