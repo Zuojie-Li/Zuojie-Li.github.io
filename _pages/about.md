@@ -181,20 +181,6 @@ redirect_from:
   }
 }
 
-/* 悬停效果 */
-.scrolling-images:hover {
-  animation-play-state: paused;
-}
-
-.scrolling-images a:hover div {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.scrolling-images a:hover img {
-  transform: scale(1.05);
-}
-
 /* 确保容器不换行且图片不被压缩 */
 .scrolling-images {
   flex-wrap: nowrap !important;
@@ -204,6 +190,51 @@ redirect_from:
 /* 确保每个图片容器不被压缩 */
 .scrolling-images > div {
   flex-shrink: 0 !important;
+}
+
+/* 悬停效果：鼠标停滞时动画停止 */
+.scrolling-images:hover {
+  animation-play-state: paused !important;
+}
+
+/* 鼠标悬停时图片效果 */
+.scrolling-images a:hover div {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+.scrolling-images a:hover img {
+  transform: scale(1.05);
+}
+
+/* 为整个滚动区域添加悬停提示 */
+.scrolling-images {
+  cursor: pointer;
+  position: relative;
+}
+
+/* 添加悬停提示文本（可选） */
+.scrolling-images::after {
+  content: '悬停查看详情';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(106, 13, 173, 0.9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.scrolling-images:hover::after {
+  opacity: 1;
 }
 
 /* 响应式调整 */
@@ -234,6 +265,11 @@ redirect_from:
       /* 响应式计算：5 × (180px + 24px) = 1020px */
       transform: translateX(-1020px);
     }
+  }
+  
+  /* 移动端隐藏悬停提示 */
+  .scrolling-images::after {
+    display: none;
   }
 }
 </style>
