@@ -38,7 +38,16 @@ redirect_from:
 * 2025.04 第十七届全国放射性药物与标记化合物学术交流会优秀壁报
 * 2025.05 原子高科博士生奖学金
 
-<div style="width: 100%; overflow: hidden; margin-top: 20px; padding: 15px 0 10px 0; background-color: #f8f9fa; border-top: 1px solid #eee;">
+<div style="width: 100%; overflow: hidden; margin-top: 20px; padding: 15px 0 10px 0; background-color: #ffffff; border-top: 1px solid #eee;">
+  <!-- 图片预加载区域（隐藏） -->
+  <div style="display: none;">
+    <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="预加载图片1">
+    <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="预加载图片2">
+    <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="预加载图片3">
+    <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="预加载图片4">
+    <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="预加载图片5">
+  </div>
+  
   <!-- 标题部分 - 紫色，无动画 -->
   <h3 style="text-align: center; margin: 0 0 20px 0; color: #6a0dad; font-size: 22px; line-height: 1.2; font-weight: 600; letter-spacing: 0.5px;">
     代表性论文
@@ -48,7 +57,7 @@ redirect_from:
     <!-- 图片1：带超链接 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="J Med Chem. 2025,ASAP" 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -59,7 +68,7 @@ redirect_from:
     <!-- 图片2：带超链接 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c02789" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="J Med Chem. 2025,68(21),23620-23631." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -70,7 +79,7 @@ redirect_from:
     <!-- 图片3：带超链接 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01608" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="J Med Chem. 2024,67(24),21644-21670." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -81,7 +90,7 @@ redirect_from:
     <!-- 图片4：带超链接 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -92,7 +101,7 @@ redirect_from:
     <!-- 图片5：带超链接 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -104,7 +113,7 @@ redirect_from:
     <!-- 重复图片1 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="J Med Chem. 2025,ASAP" 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -115,7 +124,7 @@ redirect_from:
     <!-- 重复图片2 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c02789" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="J Med Chem. 2025,68(21),23620-23631." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -126,7 +135,7 @@ redirect_from:
     <!-- 重复图片3 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01608" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="J Med Chem. 2024,67(24),21644-21670." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -137,7 +146,7 @@ redirect_from:
     <!-- 重复图片4 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -148,7 +157,7 @@ redirect_from:
     <!-- 重复图片5 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; margin: 0;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
           <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
@@ -179,7 +188,7 @@ redirect_from:
 
 .scrolling-images a:hover div {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .scrolling-images a:hover img {
@@ -213,7 +222,7 @@ redirect_from:
   h3 {
     margin-bottom: 15px !important;
     font-size: 18px !important;
-    color: #6a0dad !important; /* 确保响应式下也是紫色 */
+    color: #6a0dad !important;
   }
   
   /* 响应式下的动画调整 */
@@ -228,4 +237,3 @@ redirect_from:
   }
 }
 </style>
-
