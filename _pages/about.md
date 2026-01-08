@@ -40,17 +40,17 @@ redirect_from:
 
 
 <div style="width: 100%; overflow: hidden; margin-top: 40px; padding: 20px 0; background-color: #f8f9fa; border-top: 1px solid #eee;">
-  <h3 style="text-align: center; margin-bottom: 20px; color: #333;">滚动展示</h3>
+  <h3 style="text-align: center; margin-bottom: 20px; color: #333;">代表性论文</h3>
   
   <div class="scrolling-images" style="display: flex; animation: scroll 25s linear infinite; white-space: nowrap;">
     <!-- 图片1：带超链接 -->
     <div style="min-width: 220px; margin: 0 15px; text-align: center;">
-      <a href="https://example.com/link1" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-          <img src="/images/example1.jpg" alt="图片描述1" 
+          <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="J Med Chem. 2025,ASAP" 
                style="width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s ease;">
         </div>
-        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">图片标题1</p>
+        <p style="margin-top: 10px; font-weight: 500; font-size: 15px;">J Med Chem. 2025,ASAP</p>
       </a>
     </div>
     
