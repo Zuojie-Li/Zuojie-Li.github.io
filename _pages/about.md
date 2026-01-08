@@ -45,143 +45,268 @@ redirect_from:
   </h3>
   
   <div class="scrolling-images" style="display: flex; animation: scroll 40s linear infinite; white-space: nowrap; flex-wrap: nowrap; padding: 2px 0; align-items: flex-start;">
-    <!-- 图片1：带超链接 - 增大容器宽度 -->
+    <!-- 图片1：带超链接 - 优化显示 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="J Med Chem. 2025,ASAP" 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2025,ASAP</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2025,ASAP</p>
       </a>
     </div>
     
-    <!-- 图片2：带超链接 - 增大容器宽度 -->
+    <!-- 图片2：带超链接 - 优化显示 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c02789" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="J Med Chem. 2025,68(21),23620-23631." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2025,68(21),23620-23631.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2025,68(21),23620-23631.</p>
       </a>
     </div>
     
-    <!-- 图片3：带超链接 - 增大容器宽度 -->
+    <!-- 图片3：带超链接 - 优化显示 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01608" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="J Med Chem. 2024,67(24),21644-21670." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2024,67(24),21644-21670.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2024,67(24),21644-21670.</p>
       </a>
     </div>
     
-    <!-- 图片4：带超链接 - 增大容器宽度 -->
+    <!-- 图片4：带超链接 - 优化显示 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2024,67(23),21617-21628.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2024,67(23),21617-21628.</p>
       </a>
     </div>
     
-    <!-- 图片5：带超链接 - 增大容器宽度 -->
+    <!-- 图片5：带超链接 - 优化显示 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2021,64(24),17920-17935.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2021,64(24),17920-17935.</p>
       </a>
     </div>
     
-    <!-- 重复部分也需要同样的修改 -->
+    <!-- 重复部分也需要同样的优化 -->
     <!-- 重复图片1 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC3.jpg" alt="J Med Chem. 2025,ASAP" 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2025,ASAP</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2025,ASAP</p>
       </a>
     </div>
     
     <!-- 重复图片2 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c02789" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC4.jpg" alt="J Med Chem. 2025,68(21),23620-23631." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2025,68(21),23620-23631.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2025,68(21),23620-23631.</p>
       </a>
     </div>
     
     <!-- 重复图片3 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01608" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC1.jpg" alt="J Med Chem. 2024,67(24),21644-21670." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2024,67(24),21644-21670.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2024,67(24),21644-21670.</p>
       </a>
     </div>
     
     <!-- 重复图片4 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02656" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC2.jpg" alt="J Med Chem. 2024,67(23),21617-21628." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2024,67(23),21617-21628.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2024,67(23),21617-21628.</p>
       </a>
     </div>
     
     <!-- 重复图片5 -->
     <div style="width: 280px; margin: 0 20px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease; margin: 0; background-color: #f9f9f9;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); margin: 0; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+          <!-- 预加载占位符 -->
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);">
+            <span style="color: #aaa; font-size: 14px;">加载中...</span>
+          </div>
+          <!-- 优化后的图片 -->
           <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
-               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0;"
+               onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';"
+               onerror="this.previousElementSibling.innerHTML='加载失败'; this.previousElementSibling.style.color='#ff6b6b';"
+               loading="lazy"
+               decoding="async">
         </div>
-        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333;">J Med Chem. 2021,64(24),17920-17935.</p>
+        <p style="margin: 12px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.4; padding: 0; color: #333; transition: color 0.3s ease;">J Med Chem. 2021,64(24),17920-17935.</p>
       </a>
     </div>
   </div>
 </div>
 
 <style>
-/* 滚动动画 - 调整为新的宽度 */
+/* 滚动动画 */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    /* 新计算：5张图片 × (280px宽度 + 40px左右margin) = 1600px */
     transform: translateX(-1600px);
   }
 }
 
-/* 悬停效果 */
+/* 悬停效果优化 */
 .scrolling-images:hover {
   animation-play-state: paused;
 }
 
+.scrolling-images a {
+  position: relative;
+}
+
+.scrolling-images a::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(106, 13, 173, 0.05);
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.scrolling-images a:hover::before {
+  opacity: 1;
+}
+
 .scrolling-images a:hover div {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .scrolling-images a:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
+}
+
+.scrolling-images a:hover p {
+  color: #6a0dad;
+}
+
+/* 图片加载动画 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.scrolling-images img {
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 /* 确保容器不换行且图片不被压缩 */
@@ -195,6 +320,23 @@ redirect_from:
   flex-shrink: 0 !important;
 }
 
+/* 图片容器优化 */
+.scrolling-images > div > a > div {
+  position: relative;
+}
+
+.scrolling-images > div > a > div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+  pointer-events: none;
+}
+
 /* 响应式调整 */
 @media (max-width: 768px) {
   .scrolling-images > div {
@@ -203,7 +345,7 @@ redirect_from:
   }
   
   .scrolling-images > div > a > div {
-    padding-bottom: 56.25% !important; /* 保持16:9宽高比 */
+    padding-bottom: 56.25% !important;
   }
   
   p {
@@ -215,22 +357,18 @@ redirect_from:
   h3 {
     margin-bottom: 15px !important;
     font-size: 20px !important;
-    color: #6a0dad !important;
   }
   
-  /* 响应式下的动画调整 */
   @keyframes scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      /* 响应式计算：5 × (220px + 30px) = 1250px */
       transform: translateX(-1250px);
     }
   }
 }
 
-/* 针对小屏幕的进一步优化 */
 @media (max-width: 480px) {
   .scrolling-images > div {
     width: 200px !important;
@@ -251,7 +389,7 @@ redirect_from:
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-1050px); /* 5 × (200px + 20px) */
+      transform: translateX(-1050px);
     }
   }
 }
