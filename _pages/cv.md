@@ -110,8 +110,10 @@ About Me
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* 主要修改：相框高度从240px增加到320px */
 .photo-frame {
-  height: 240px;
+  height: 320px; /* 已调大：从240px增加到320px */
   background: #f8f9fa;
   border-radius: 6px;
   padding: 6px;
@@ -136,7 +138,7 @@ About Me
 .scrolling-photos:hover { animation-play-state: paused; }
 .photo-item {
   flex: 0 0 auto;
-  width: 210px;
+  width: 230px; /* 略微增加宽度以匹配更高高度 */
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
@@ -213,15 +215,17 @@ About Me
 }
 @keyframes scrollGallery {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-210px * 10 - 15px * 10)); }
+  100% { transform: translateX(calc(-230px * 10 - 15px * 10)); } /* 更新为230px */
 }
+
+/* 响应式设计 - 调整移动端高度 */
 @media (max-width: 768px) {
   .photo-frame { 
-    height: 180px; 
+    height: 220px; /* 移动端也相应调高 */
     padding: 4px;
   }
   .photo-item { 
-    width: 150px; 
+    width: 160px; /* 移动端宽度相应调整 */
     padding: 3px;
   }
   .gallery-title { 
@@ -238,7 +242,7 @@ About Me
   }
   @keyframes scrollGallery {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-150px * 10 - 15px * 10)); }
+    100% { transform: translateX(calc(-160px * 10 - 15px * 10)); } /* 更新为160px */
   }
 }
 </style>
