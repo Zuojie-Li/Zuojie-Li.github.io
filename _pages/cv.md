@@ -68,7 +68,7 @@ Awards
 
 About Me
 ======
-<!-- 滚动相框组件 - 紧凑版 -->
+<!-- 滚动相框组件 - 280px高度版 -->
 <style>
 .photo-gallery-container {
   background: white;
@@ -111,9 +111,9 @@ About Me
   100% { background-position: 0% 50%; }
 }
 
-/* 主要修改：相框高度从320px减小到260px */
+/* 主要修改：相框高度调整为280px */
 .photo-frame {
-  height: 260px; /* 减小了60px */
+  height: 280px; /* 调整为280px */
   background: #f8f9fa;
   border-radius: 5px;
   padding: 5px;
@@ -132,13 +132,13 @@ About Me
 .scrolling-photos {
   display: flex;
   height: 100%;
-  gap: 12px; /* 减小间隙 */
+  gap: 12px;
   animation: scrollGallery 35s linear infinite;
 }
 .scrolling-photos:hover { animation-play-state: paused; }
 .photo-item {
   flex: 0 0 auto;
-  width: 190px; /* 减小宽度以匹配新高度 */
+  width: 200px; /* 略微增加以适应280px高度 */
   height: 100%;
   border-radius: 4px;
   overflow: hidden;
@@ -161,7 +161,7 @@ About Me
   pointer-events: none;
 }
 .photo-item:hover { 
-  transform: translateY(-8px) scale(1.02); /* 减小悬停效果 */
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 12px 20px rgba(0,0,0,0.12), 0 0 0 1.5px rgba(52, 152, 219, 0.2);
   border-color: #3498db;
   z-index: 10;
@@ -191,7 +191,7 @@ About Me
   -moz-osx-font-smoothing: grayscale;
 }
 .photo-item:hover .photo-img { 
-  transform: scale(1.12) translateZ(0); /* 减小放大效果 */
+  transform: scale(1.12) translateZ(0);
 }
 .photo-label {
   position: absolute;
@@ -212,17 +212,17 @@ About Me
 }
 @keyframes scrollGallery {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-190px * 10 - 12px * 10)); } /* 更新为190px */
+  100% { transform: translateX(calc(-200px * 10 - 12px * 10)); } /* 更新为200px */
 }
 
 /* 响应式设计 - 调整移动端 */
 @media (max-width: 768px) {
   .photo-frame { 
-    height: 180px; /* 移动端减小 */
+    height: 190px; /* 移动端也按比例调整 */
     padding: 3px;
   }
   .photo-item { 
-    width: 130px; /* 移动端宽度相应调整 */
+    width: 140px; /* 移动端宽度相应调整 */
     padding: 2px;
   }
   .gallery-title { 
@@ -239,7 +239,7 @@ About Me
   }
   @keyframes scrollGallery {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-130px * 10 - 12px * 10)); } /* 更新为130px */
+    100% { transform: translateX(calc(-140px * 10 - 12px * 10)); } /* 更新为140px */
   }
 }
 </style>
