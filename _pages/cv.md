@@ -209,7 +209,7 @@ About Me
 
 <script>
 const photos = [
-  { url: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=450&h=320&fit=crop&auto=format", title: "山间日出", desc: "清晨山景" },
+  { url: "https://Zuojie-Li.github.io/files/wallpape3.jpg", title: "山间日出", desc: "清晨山景" },
   { url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=450&h=320&fit=crop&auto=format", title: "湖畔森林", desc: "湖边森林" },
   { url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=450&h=320&fit=crop&auto=format", title: "迷雾山脉", desc: "云雾山峦" },
   { url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=450&h=320&fit=crop&auto=format", title: "自然小径", desc: "森林小路" },
