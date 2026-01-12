@@ -325,10 +325,9 @@ const scrollingPhotos = document.getElementById('scrollingPhotos');
 });
 </script>
 
+<!-- =========== 分隔线 =========== -->
+<div style="height: 30px;"></div>
 
-<div style="margin: 30px 0; border-bottom: 2px dashed #e0e0e0;"></div>
-
-    
     <!-- 小狗动画 -->
     <div style="
         position: absolute;
