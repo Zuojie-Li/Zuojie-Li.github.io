@@ -68,7 +68,7 @@ Awards
 
 About Me
 ======
-<!-- 滚动相框组件 - 带相框效果版 -->
+<!-- 滚动相框组件 - 优化图片尺寸版 -->
 <style>
 .photo-gallery-container {
   background: white;
@@ -209,16 +209,56 @@ About Me
 
 <script>
 const photos = [
-  { url: "https://Zuojie-Li.github.io/files/wallpape3.jpg", title: "山间日出", desc: "清晨山景" },
-  { url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=450&h=320&fit=crop&auto=format", title: "湖畔森林", desc: "湖边森林" },
-  { url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=450&h=320&fit=crop&auto=format", title: "迷雾山脉", desc: "云雾山峦" },
-  { url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=450&h=320&fit=crop&auto=format", title: "自然小径", desc: "森林小路" },
-  { url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=450&h=320&fit=crop&auto=format", title: "瀑布风光", desc: "瀑布景色" },
-  { url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=450&h=320&fit=crop&auto=format", title: "雪山峰顶", desc: "雪山景观" },
-  { url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=450&h=320&fit=crop&auto=format", title: "秋日森林", desc: "秋天树林" },
-  { url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=450&h=320&fit=crop&auto=format", title: "海岸日落", desc: "日落美景" },
-  { url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=450&h=320&fit=crop&auto=format", title: "冰川湖泊", desc: "冰川湖" },
-  { url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=450&h=320&fit=crop&auto=format", title: "星空夜景", desc: "夜空星辰" }
+  { 
+    url: "https://Zuojie-Li.github.io/files/wallpape3.jpg", 
+    title: "山间日出", 
+    desc: "清晨山景" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop&auto=format", 
+    title: "湖畔森林", 
+    desc: "湖边森林" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop&auto=format", 
+    title: "迷雾山脉", 
+    desc: "云雾山峦" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop&auto=format", 
+    title: "自然小径", 
+    desc: "森林小路" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop&auto=format", 
+    title: "瀑布风光", 
+    desc: "瀑布景色" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&auto=format", 
+    title: "雪山峰顶", 
+    desc: "雪山景观" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&auto=format", 
+    title: "秋日森林", 
+    desc: "秋天树林" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=400&h=300&fit=crop&auto=format", 
+    title: "海岸日落", 
+    desc: "日落美景" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop&auto=format", 
+    title: "冰川湖泊", 
+    desc: "冰川湖" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=300&fit=crop&auto=format", 
+    title: "星空夜景", 
+    desc: "夜空星辰" 
+  }
 ];
 
 const scrollingPhotos = document.getElementById('scrollingPhotos');
