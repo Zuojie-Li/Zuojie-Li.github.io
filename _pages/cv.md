@@ -324,6 +324,10 @@ const scrollingPhotos = document.getElementById('scrollingPhotos');
   scrollingPhotos.appendChild(photoItem);
 });
 </script>
+
+
+<div style="margin: 30px 0; border-bottom: 2px dashed #e0e0e0;"></div>
+
     
     <!-- 小狗动画 -->
     <div style="
