@@ -260,53 +260,53 @@ About Me
 const photos = [
   { 
     url: "https://Zuojie-Li.github.io/files/M1.jpg", 
-    title: "山间日出", 
-    desc: "清晨山景" 
+    title: "泰安", 
+    desc: "东平湖" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "湖畔森林", 
-    desc: "湖边森林" 
+    url: "https://Zuojie-Li.github.io/files/M3.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "迷雾山脉", 
-    desc: "云雾山峦" 
+    url: "https://Zuojie-Li.github.io/files/M4.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "自然小径", 
-    desc: "森林小路" 
+    url: "https://Zuojie-Li.github.io/files/M5.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "瀑布风光", 
-    desc: "瀑布景色" 
+    url: "https://Zuojie-Li.github.io/files/M6.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "雪山峰顶", 
-    desc: "雪山景观" 
+    url: "https://Zuojie-Li.github.io/files/M7.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M2.jpg", 
-    title: "秋日森林", 
-    desc: "秋天树林" 
+    title: "泰安", 
+    desc: "东平湖" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "海岸日落", 
-    desc: "日落美景" 
+    url: "https://Zuojie-Li.github.io/files/M8.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "冰川湖泊", 
-    desc: "冰川湖" 
+    url: "https://Zuojie-Li.github.io/files/M9.jpg", 
+    title: "", 
+    desc: "" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&h=800&fit=crop&auto=format&q=85", 
-    title: "星空夜景", 
-    desc: "夜空星辰" 
+    url: "https://Zuojie-Li.github.io/files/M10.jpg", 
+    title: "", 
+    desc: "" 
   }
 ];
 
