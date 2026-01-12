@@ -210,7 +210,7 @@ About Me
 <script>
 const photos = [
   { 
-    url: "https://Zuojie-Li.github.io/files/wallpape3.jpg", 
+    url: "https://Zuojie-Li.github.io/files/M1.jpg", 
     title: "山间日出", 
     desc: "清晨山景" 
   },
