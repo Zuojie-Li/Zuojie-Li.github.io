@@ -68,357 +68,172 @@ Awards
 
 About Me
 ======
-<!-- 滚动相框组件 - 添加到Markdown文档底部 -->
+<!-- 滚动相框组件 - 带相框效果版 -->
 <style>
-  .photo-gallery-container {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-    margin: 15px 0 20px 0;
-    border-top: 4px solid #3498db;
+.photo-gallery-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 12px;
+  margin: 8px 0;
+  border-top: 2px solid #3498db;
+}
+.gallery-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.photo-frame {
+  height: 200px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.photo-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c);
+}
+.scrolling-photos {
+  display: flex;
+  height: 100%;
+  gap: 15px;
+  animation: scrollGallery 30s linear infinite;
+}
+.scrolling-photos:hover { animation-play-state: paused; }
+.photo-item {
+  flex: 0 0 auto;
+  width: 170px;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
+  padding: 8px;
+  background: white;
+  border: 1px solid #eaeaea;
+}
+.photo-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
+}
+.photo-item:hover { 
+  transform: translateY(-12px) scale(1.03); 
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15), 0 0 0 3px rgba(52, 152, 219, 0.2);
+  border-color: #3498db;
+  z-index: 10;
+}
+.photo-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+.photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.photo-item:hover .photo-img { 
+  transform: scale(1.15); 
+}
+.photo-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  color: white;
+  padding: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  backdrop-filter: blur(2px);
+}
+.photo-item:hover .photo-label { 
+  transform: translateY(0); 
+}
+@keyframes scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-170px * 10 - 15px * 10)); }
+}
+@media (max-width: 768px) {
+  .photo-frame { height: 160px; }
+  .photo-item { width: 140px; }
+  .gallery-title { font-size: 1.1rem; margin-bottom: 8px; }
+  .photo-item:hover { 
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12), 0 0 0 2px rgba(52, 152, 219, 0.2);
   }
-  
-  .gallery-title {
-    font-size: 1.6rem;
-    color: #2c3e50;
-    margin: 0 0 15px 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  .photo-item:hover .photo-img { 
+    transform: scale(1.12); 
   }
-  
-  .photo-frame {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(145deg, #f0f0f0, #ffffff);
-    border-radius: 10px;
-    padding: 12px;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .photo-frame::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c, #f39c12, #9b59b6);
-    z-index: 2;
-  }
-  
-  .scrolling-photos {
-    display: flex;
-    height: 100%;
-    gap: 18px;
-    animation: scrollGallery 40s linear infinite;
-  }
-  
-  .scrolling-photos:hover {
-    animation-play-state: paused;
-  }
-  
-  .photo-item {
-    flex: 0 0 auto;
-    width: 200px;
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-  
-  .photo-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
-  }
-  
-  .photo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .photo-item:hover .photo-img {
-    transform: scale(1.05);
-  }
-  
-  .photo-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 8px;
-    font-size: 0.85rem;
-    text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-  }
-  
-  .photo-item:hover .photo-label {
-    transform: translateY(0);
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 15px;
-  }
-  
-  .control-btn {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    box-shadow: 0 3px 5px rgba(52, 152, 219, 0.2);
-  }
-  
-  .control-btn:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 7px rgba(52, 152, 219, 0.3);
-  }
-  
-  .photo-counter {
-    text-align: center;
-    margin-top: 12px;
-    color: #7f8c8d;
-    font-size: 0.9rem;
-  }
-  
   @keyframes scrollGallery {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-200px * 10 - 18px * 10));
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-140px * 10 - 15px * 10)); }
   }
-  
-  @media (max-width: 768px) {
-    .photo-gallery-container {
-      padding: 15px;
-      margin: 10px 0 15px 0;
-    }
-    
-    .gallery-title {
-      font-size: 1.4rem;
-      margin: 0 0 12px 0;
-    }
-    
-    .photo-frame {
-      height: 200px;
-      padding: 10px;
-    }
-    
-    .photo-item {
-      width: 160px;
-    }
-    
-    .controls {
-      margin-top: 12px;
-      gap: 10px;
-    }
-    
-    .control-btn {
-      padding: 7px 14px;
-      font-size: 0.85rem;
-    }
-    
-    @keyframes scrollGallery {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(calc(-160px * 10 - 18px * 10));
-      }
-    }
-  }
+}
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div class="photo-gallery-container">
-  <h2 class="gallery-title">
-    <i class="fas fa-camera-retro"></i> 精彩瞬间相册
-  </h2>
-  
+  <h2 class="gallery-title"><i class="fas fa-images"></i>相册</h2>
   <div class="photo-frame">
-    <div class="scrolling-photos" id="scrollingPhotos">
-      <!-- 图片将通过JavaScript动态添加 -->
-    </div>
-  </div>
-  
-  <div class="controls">
-    <button class="control-btn" id="pauseBtn">
-      <i class="fas fa-pause"></i> 暂停滚动
-    </button>
-    <button class="control-btn" id="playBtn">
-      <i class="fas fa-play"></i> 继续滚动
-    </button>
-    <button class="control-btn" id="reverseBtn">
-      <i class="fas fa-backward"></i> 反向滚动
-    </button>
-  </div>
-  
-  <div class="photo-counter">
-    展示中: <span id="currentPhoto">1</span> / <span id="totalPhotos">10</span> 张图片
+    <div class="scrolling-photos" id="scrollingPhotos"></div>
   </div>
 </div>
 
 <script>
-  // 图片数据 - 可以替换为您自己的图片
-  const photos = [
-    { 
-      url: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "山间日出", 
-      desc: "美丽的清晨山景" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "湖畔森林", 
-      desc: "宁静的湖边森林" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "迷雾山脉", 
-      desc: "云雾缭绕的山峦" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "自然小径", 
-      desc: "穿越森林的小路" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "瀑布风光", 
-      desc: "壮观的瀑布景色" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "雪山峰顶", 
-      desc: "雄伟的雪山景观" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "秋日森林", 
-      desc: "金黄色的秋天树林" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "海岸日落", 
-      desc: "海滩上的日落美景" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "冰川湖泊", 
-      desc: "清澈的冰川湖" 
-    },
-    { 
-      url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&h=350&fit=crop&crop=entropy&auto=format", 
-      title: "星空夜景", 
-      desc: "璀璨的夜空星辰" 
-    }
-  ];
+const photos = [
+  { url: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=450&h=320&fit=crop&auto=format", title: "山间日出", desc: "清晨山景" },
+  { url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=450&h=320&fit=crop&auto=format", title: "湖畔森林", desc: "湖边森林" },
+  { url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=450&h=320&fit=crop&auto=format", title: "迷雾山脉", desc: "云雾山峦" },
+  { url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=450&h=320&fit=crop&auto=format", title: "自然小径", desc: "森林小路" },
+  { url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=450&h=320&fit=crop&auto=format", title: "瀑布风光", desc: "瀑布景色" },
+  { url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=450&h=320&fit=crop&auto=format", title: "雪山峰顶", desc: "雪山景观" },
+  { url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=450&h=320&fit=crop&auto=format", title: "秋日森林", desc: "秋天树林" },
+  { url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=450&h=320&fit=crop&auto=format", title: "海岸日落", desc: "日落美景" },
+  { url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=450&h=320&fit=crop&auto=format", title: "冰川湖泊", desc: "冰川湖" },
+  { url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=450&h=320&fit=crop&auto=format", title: "星空夜景", desc: "夜空星辰" }
+];
 
-  // 初始化相册
-  const scrollingPhotos = document.getElementById('scrollingPhotos');
-  const totalPhotosElement = document.getElementById('totalPhotos');
-  const currentPhotoElement = document.getElementById('currentPhoto');
-  
-  // 设置总图片数
-  totalPhotosElement.textContent = photos.length;
-  
-  // 为了创建无缝滚动效果，我们将图片复制一份
-  const allPhotos = [...photos, ...photos];
-  
-  // 动态生成图片元素
-  allPhotos.forEach((photo, index) => {
-    const photoItem = document.createElement('div');
-    photoItem.className = 'photo-item';
-    photoItem.dataset.index = (index % photos.length) + 1;
-    
-    photoItem.innerHTML = `
-      <img src="${photo.url}" 
-           alt="${photo.title}" 
-           class="photo-img">
-      <div class="photo-label">
-        <strong>${photo.title}</strong><br>
-        <small>${photo.desc}</small>
-      </div>
-    `;
-    
-    scrollingPhotos.appendChild(photoItem);
-  });
-  
-  // 控制按钮功能
-  const pauseBtn = document.getElementById('pauseBtn');
-  const playBtn = document.getElementById('playBtn');
-  const reverseBtn = document.getElementById('reverseBtn');
-  
-  let isPaused = false;
-  let isReversed = false;
-  
-  pauseBtn.addEventListener('click', () => {
-    scrollingPhotos.style.animationPlayState = 'paused';
-    isPaused = true;
-  });
-  
-  playBtn.addEventListener('click', () => {
-    scrollingPhotos.style.animationPlayState = 'running';
-    isPaused = false;
-  });
-  
-  reverseBtn.addEventListener('click', () => {
-    isReversed = !isReversed;
-    if (isReversed) {
-      scrollingPhotos.style.animationDirection = 'reverse';
-      reverseBtn.innerHTML = '<i class="fas fa-forward"></i> 正向滚动';
-    } else {
-      scrollingPhotos.style.animationDirection = 'normal';
-      reverseBtn.innerHTML = '<i class="fas fa-backward"></i> 反向滚动';
-    }
-  });
-  
-  // 更新当前显示的图片
-  let currentVisibleIndex = 1;
-  
-  const updateCurrentPhoto = () => {
-    if (isPaused) return;
-    
-    if (isReversed) {
-      currentVisibleIndex--;
-      if (currentVisibleIndex < 1) currentVisibleIndex = photos.length;
-    } else {
-      currentVisibleIndex++;
-      if (currentVisibleIndex > photos.length) currentVisibleIndex = 1;
-    }
-    
-    currentPhotoElement.textContent = currentVisibleIndex;
-  };
-  
-  // 每4秒更新一次当前图片指示器
-  setInterval(updateCurrentPhoto, 4000);
-  
-  // 初始设置
-  scrollingPhotos.style.animation = `scrollGallery 40s linear infinite`;
+const scrollingPhotos = document.getElementById('scrollingPhotos');
+
+[...photos, ...photos].forEach((photo, index) => {
+  const photoItem = document.createElement('div');
+  photoItem.className = 'photo-item';
+  photoItem.innerHTML = `
+    <div class="photo-inner">
+      <img src="${photo.url}" alt="${photo.title}" class="photo-img">
+      <div class="photo-label"><strong>${photo.title}</strong><br><small>${photo.desc}</small></div>
+    </div>
+  `;
+  scrollingPhotos.appendChild(photoItem);
+});
 </script>
 
 <div style="
