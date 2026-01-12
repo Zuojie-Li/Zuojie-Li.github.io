@@ -68,6 +68,338 @@ Awards
 
 About Me
 ======
+<!-- 滚动相框组件 - 添加到Markdown文档底部 -->
+<style>
+  .photo-gallery-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 30px;
+    border-top: 5px solid #3498db;
+  }
+  
+  .gallery-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .photo-frame {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c, #f39c12, #9b59b6);
+    z-index: 2;
+  }
+  
+  .scrolling-photos {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    animation: scrollGallery 40s linear infinite;
+  }
+  
+  .scrolling-photos:hover {
+    animation-play-state: paused;
+  }
+  
+  .photo-item {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .photo-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .photo-item:hover .photo-img {
+    transform: scale(1.05);
+  }
+  
+  .photo-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-item:hover .photo-label {
+    transform: translateY(0);
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .control-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+  }
+  
+  .control-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+  }
+  
+  .photo-counter {
+    text-align: center;
+    margin-top: 15px;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+  }
+  
+  @keyframes scrollGallery {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-220px * 10 - 20px * 10));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .photo-frame {
+      height: 220px;
+    }
+    
+    .photo-item {
+      width: 180px;
+    }
+    
+    @keyframes scrollGallery {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-180px * 10 - 20px * 10));
+      }
+    }
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="photo-gallery-container">
+  <h2 class="gallery-title">
+    <i class="fas fa-camera-retro"></i> 精彩瞬间相册
+  </h2>
+  
+  <div class="photo-frame">
+    <div class="scrolling-photos" id="scrollingPhotos">
+      <!-- 图片将通过JavaScript动态添加 -->
+    </div>
+  </div>
+  
+  <div class="controls">
+    <button class="control-btn" id="pauseBtn">
+      <i class="fas fa-pause"></i> 暂停滚动
+    </button>
+    <button class="control-btn" id="playBtn">
+      <i class="fas fa-play"></i> 继续滚动
+    </button>
+    <button class="control-btn" id="reverseBtn">
+      <i class="fas fa-backward"></i> 反向滚动
+    </button>
+  </div>
+  
+  <div class="photo-counter">
+    展示中: <span id="currentPhoto">1</span> / <span id="totalPhotos">10</span> 张图片
+  </div>
+</div>
+
+<script>
+  // 图片数据 - 可以替换为您自己的图片
+  const photos = [
+    { 
+      url: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "山间日出", 
+      desc: "美丽的清晨山景" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "湖畔森林", 
+      desc: "宁静的湖边森林" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "迷雾山脉", 
+      desc: "云雾缭绕的山峦" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "自然小径", 
+      desc: "穿越森林的小路" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "瀑布风光", 
+      desc: "壮观的瀑布景色" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "雪山峰顶", 
+      desc: "雄伟的雪山景观" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "秋日森林", 
+      desc: "金黄色的秋天树林" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "海岸日落", 
+      desc: "海滩上的日落美景" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "冰川湖泊", 
+      desc: "清澈的冰川湖" 
+    },
+    { 
+      url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&h=350&fit=crop&crop=entropy&auto=format", 
+      title: "星空夜景", 
+      desc: "璀璨的夜空星辰" 
+    }
+  ];
+
+  // 初始化相册
+  const scrollingPhotos = document.getElementById('scrollingPhotos');
+  const totalPhotosElement = document.getElementById('totalPhotos');
+  const currentPhotoElement = document.getElementById('currentPhoto');
+  
+  // 设置总图片数
+  totalPhotosElement.textContent = photos.length;
+  
+  // 为了创建无缝滚动效果，我们将图片复制一份
+  const allPhotos = [...photos, ...photos];
+  
+  // 动态生成图片元素
+  allPhotos.forEach((photo, index) => {
+    const photoItem = document.createElement('div');
+    photoItem.className = 'photo-item';
+    photoItem.dataset.index = (index % photos.length) + 1;
+    
+    photoItem.innerHTML = `
+      <img src="${photo.url}" 
+           alt="${photo.title}" 
+           class="photo-img">
+      <div class="photo-label">
+        <strong>${photo.title}</strong><br>
+        <small>${photo.desc}</small>
+      </div>
+    `;
+    
+    scrollingPhotos.appendChild(photoItem);
+  });
+  
+  // 控制按钮功能
+  const pauseBtn = document.getElementById('pauseBtn');
+  const playBtn = document.getElementById('playBtn');
+  const reverseBtn = document.getElementById('reverseBtn');
+  
+  let isPaused = false;
+  let isReversed = false;
+  
+  pauseBtn.addEventListener('click', () => {
+    scrollingPhotos.style.animationPlayState = 'paused';
+    isPaused = true;
+  });
+  
+  playBtn.addEventListener('click', () => {
+    scrollingPhotos.style.animationPlayState = 'running';
+    isPaused = false;
+  });
+  
+  reverseBtn.addEventListener('click', () => {
+    isReversed = !isReversed;
+    if (isReversed) {
+      scrollingPhotos.style.animationDirection = 'reverse';
+      reverseBtn.innerHTML = '<i class="fas fa-forward"></i> 正向滚动';
+    } else {
+      scrollingPhotos.style.animationDirection = 'normal';
+      reverseBtn.innerHTML = '<i class="fas fa-backward"></i> 反向滚动';
+    }
+  });
+  
+  // 更新当前显示的图片
+  let currentVisibleIndex = 1;
+  
+  const updateCurrentPhoto = () => {
+    if (isPaused) return;
+    
+    if (isReversed) {
+      currentVisibleIndex--;
+      if (currentVisibleIndex < 1) currentVisibleIndex = photos.length;
+    } else {
+      currentVisibleIndex++;
+      if (currentVisibleIndex > photos.length) currentVisibleIndex = 1;
+    }
+    
+    currentPhotoElement.textContent = currentVisibleIndex;
+  };
+  
+  // 每4秒更新一次当前图片指示器
+  setInterval(updateCurrentPhoto, 4000);
+  
+  // 初始设置
+  scrollingPhotos.style.animation = `scrollGallery 40s linear infinite`;
+</script>
+
 <div style="
     font-size: 1.2rem;
     font-weight: bold;
