@@ -45,7 +45,7 @@ redirect_from:
     <img src="https://Zuojie-Li.github.io/files/TOC4_1.jpg" alt="预加载图片2">
     <img src="https://Zuojie-Li.github.io/files/TOC1_1.jpg" alt="预加载图片3">
     <img src="https://Zuojie-Li.github.io/files/TOC2_1.jpg" alt="预加载图片4">
-    <img src="https://Zuojie-Li.github.io/files/TOC5_1.jpg" alt="预加载图片5">
+    <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="预加载图片5">
   </div>
   
   <!-- 标题部分 - 紫色，无动画 -->
@@ -102,7 +102,7 @@ redirect_from:
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit; display: block;">
         <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
-          <img src="https://Zuojie-Li.github.io/files/TOC5_1.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
+          <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
         <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem. 2021,64(24),17920-17935.</p>
@@ -158,7 +158,7 @@ redirect_from:
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01236" target="_blank" style="text-decoration: none; color: inherit; display: block;">
         <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
-          <img src="https://Zuojie-Li.github.io/files/TOC5_1.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
+          <img src="https://Zuojie-Li.github.io/files/TOC5.jpg" alt="J Med Chem. 2021,64(24),17920-17935." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
         <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem. 2021,64(24),17920-17935.</p>
