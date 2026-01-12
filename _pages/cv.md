@@ -68,18 +68,18 @@ Awards
 
 About Me
 ======
-<!-- 滚动相框组件 - 280px高度版 -->
+<!-- 滚动相框组件 - 高清优化版 -->
 <style>
 .photo-gallery-container {
   background: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 10px;
-  margin: 8px 0;
-  border-top: 2px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  padding: 12px;
+  margin: 10px 0;
+  border-top: 3px solid #3498db;
 }
 .gallery-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   background: linear-gradient(90deg, 
       #ff6b6b,  /* 柔和红 */
@@ -97,13 +97,13 @@ About Me
   background-clip: text;
   text-align: center;
   font-family: 'Helvetica Neue', sans-serif;
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
-  margin: 0 0 10px 0;
-  padding: 8px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin: 0 0 12px 0;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
 }
 @keyframes softRainbow {
   0% { background-position: 0% 50%; }
@@ -111,12 +111,12 @@ About Me
   100% { background-position: 0% 50%; }
 }
 
-/* 主要修改：相框高度调整为280px */
+/* 主要修改：相框高度从240px增加到320px */
 .photo-frame {
-  height: 280px; /* 调整为280px */
+  height: 320px; /* 已调大：从240px增加到320px */
   background: #f8f9fa;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 6px;
+  padding: 6px;
   position: relative;
   overflow: hidden;
 }
@@ -126,27 +126,27 @@ About Me
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c);
 }
 .scrolling-photos {
   display: flex;
   height: 100%;
-  gap: 12px;
+  gap: 15px;
   animation: scrollGallery 35s linear infinite;
 }
 .scrolling-photos:hover { animation-play-state: paused; }
 .photo-item {
   flex: 0 0 auto;
-  width: 200px; /* 略微增加以适应280px高度 */
+  width: 230px; /* 略微增加宽度以匹配更高高度 */
   height: 100%;
-  border-radius: 4px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
-  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   position: relative;
   z-index: 1;
-  padding: 3px;
+  padding: 4px;
   background: white;
   border: 1px solid #e0e0e0;
 }
@@ -161,18 +161,19 @@ About Me
   pointer-events: none;
 }
 .photo-item:hover { 
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.12), 0 0 0 1.5px rgba(52, 152, 219, 0.2);
+  transform: translateY(-10px) scale(1.03); 
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15), 0 0 0 2px rgba(52, 152, 219, 0.2);
   border-color: #3498db;
   z-index: 10;
 }
 .photo-inner {
   width: 100%;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 3px;
   overflow: hidden;
   position: relative;
-  box-shadow: inset 0 0 2px rgba(0,0,0,0.06);
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.08);
+  /* 添加GPU加速 */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -180,10 +181,12 @@ About Me
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+  /* 优化图片渲染质量 */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
+  /* 避免图片模糊的关键设置 */
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -191,7 +194,7 @@ About Me
   -moz-osx-font-smoothing: grayscale;
 }
 .photo-item:hover .photo-img { 
-  transform: scale(1.12) translateZ(0);
+  transform: scale(1.15) translateZ(0); 
 }
 .photo-label {
   position: absolute;
@@ -200,11 +203,11 @@ About Me
   right: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.55));
   color: white;
-  padding: 5px;
-  font-size: 0.75rem;
+  padding: 6px;
+  font-size: 0.8rem;
   text-align: center;
   transform: translateY(100%);
-  transition: transform 0.25s ease;
+  transition: transform 0.3s ease;
   backdrop-filter: blur(1px);
 }
 .photo-item:hover .photo-label { 
@@ -212,34 +215,34 @@ About Me
 }
 @keyframes scrollGallery {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-200px * 10 - 12px * 10)); } /* 更新为200px */
+  100% { transform: translateX(calc(-230px * 10 - 15px * 10)); } /* 更新为230px */
 }
 
-/* 响应式设计 - 调整移动端 */
+/* 响应式设计 - 调整移动端高度 */
 @media (max-width: 768px) {
   .photo-frame { 
-    height: 190px; /* 移动端也按比例调整 */
-    padding: 3px;
+    height: 220px; /* 移动端也相应调高 */
+    padding: 4px;
   }
   .photo-item { 
-    width: 140px; /* 移动端宽度相应调整 */
-    padding: 2px;
+    width: 160px; /* 移动端宽度相应调整 */
+    padding: 3px;
   }
   .gallery-title { 
-    font-size: 0.95rem; 
-    margin-bottom: 6px;
-    padding: 6px;
+    font-size: 1rem; 
+    margin-bottom: 8px;
+    padding: 8px;
   }
   .photo-item:hover { 
-    transform: translateY(-4px) scale(1.01); 
-    box-shadow: 0 8px 14px rgba(0,0,0,0.1), 0 0 0 1px rgba(52, 152, 219, 0.15);
+    transform: translateY(-6px) scale(1.02); 
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12), 0 0 0 1px rgba(52, 152, 219, 0.2);
   }
   .photo-item:hover .photo-img { 
-    transform: scale(1.08) translateZ(0); 
+    transform: scale(1.12) translateZ(0); 
   }
   @keyframes scrollGallery {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-140px * 10 - 12px * 10)); } /* 更新为140px */
+    100% { transform: translateX(calc(-160px * 10 - 15px * 10)); } /* 更新为160px */
   }
 }
 </style>
