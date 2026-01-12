@@ -68,31 +68,31 @@ Awards
 
 About Me
 ======
-<!-- 滚动相框组件 - 优化图片尺寸版 -->
+<!-- 滚动相框组件 - 适配1920×1280图片版 -->
 <style>
 .photo-gallery-container {
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  padding: 12px;
-  margin: 8px 0;
-  border-top: 2px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  padding: 15px;
+  margin: 10px 0;
+  border-top: 3px solid #3498db;
 }
 .gallery-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #2c3e50;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 .photo-frame {
-  height: 200px;
+  height: 240px; /* 增加高度以适应3:2图片比例 */
   background: #f8f9fa;
-  border-radius: 6px;
-  padding: 8px;
+  border-radius: 8px;
+  padding: 10px;
   position: relative;
   overflow: hidden;
 }
@@ -102,27 +102,27 @@ About Me
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c);
 }
 .scrolling-photos {
   display: flex;
   height: 100%;
-  gap: 15px;
-  animation: scrollGallery 30s linear infinite;
+  gap: 18px;
+  animation: scrollGallery 35s linear infinite;
 }
 .scrolling-photos:hover { animation-play-state: paused; }
 .photo-item {
   flex: 0 0 auto;
-  width: 170px;
+  width: 220px; /* 增加宽度以匹配3:2比例 */
   height: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   position: relative;
   z-index: 1;
-  padding: 8px;
+  padding: 10px;
   background: white;
   border: 1px solid #eaeaea;
 }
@@ -138,17 +138,17 @@ About Me
 }
 .photo-item:hover { 
   transform: translateY(-12px) scale(1.03); 
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15), 0 0 0 3px rgba(52, 152, 219, 0.2);
+  box-shadow: 0 18px 28px rgba(0,0,0,0.15), 0 0 0 3px rgba(52, 152, 219, 0.2);
   border-color: #3498db;
   z-index: 10;
 }
 .photo-inner {
   width: 100%;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
   position: relative;
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 }
 .photo-img {
   width: 100%;
@@ -166,8 +166,8 @@ About Me
   right: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
   color: white;
-  padding: 8px;
-  font-size: 0.8rem;
+  padding: 10px;
+  font-size: 0.85rem;
   text-align: center;
   transform: translateY(100%);
   transition: transform 0.4s ease;
@@ -178,22 +178,22 @@ About Me
 }
 @keyframes scrollGallery {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-170px * 10 - 15px * 10)); }
+  100% { transform: translateX(calc(-220px * 10 - 18px * 10)); }
 }
 @media (max-width: 768px) {
-  .photo-frame { height: 160px; }
-  .photo-item { width: 140px; }
-  .gallery-title { font-size: 1.1rem; margin-bottom: 8px; }
+  .photo-frame { height: 180px; }
+  .photo-item { width: 160px; }
+  .gallery-title { font-size: 1.2rem; margin-bottom: 10px; }
   .photo-item:hover { 
     transform: translateY(-8px) scale(1.02); 
-    box-shadow: 0 10px 18px rgba(0,0,0,0.12), 0 0 0 2px rgba(52, 152, 219, 0.2);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.12), 0 0 0 2px rgba(52, 152, 219, 0.2);
   }
   .photo-item:hover .photo-img { 
     transform: scale(1.12); 
   }
   @keyframes scrollGallery {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-140px * 10 - 15px * 10)); }
+    100% { transform: translateX(calc(-160px * 10 - 18px * 10)); }
   }
 }
 </style>
@@ -215,47 +215,47 @@ const photos = [
     desc: "清晨山景" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=533&fit=crop&auto=format", 
     title: "湖畔森林", 
     desc: "湖边森林" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=533&fit=crop&auto=format", 
     title: "迷雾山脉", 
     desc: "云雾山峦" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=533&fit=crop&auto=format", 
     title: "自然小径", 
     desc: "森林小路" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop&auto=format", 
+    url: "https://Zuojie-Li.github.io/files/M2.jpg", 
     title: "瀑布风光", 
     desc: "瀑布景色" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=533&fit=crop&auto=format", 
     title: "雪山峰顶", 
     desc: "雪山景观" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=533&fit=crop&auto=format", 
     title: "秋日森林", 
     desc: "秋天树林" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&h=533&fit=crop&auto=format", 
     title: "海岸日落", 
     desc: "日落美景" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=533&fit=crop&auto=format", 
     title: "冰川湖泊", 
     desc: "冰川湖" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=300&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=533&fit=crop&auto=format", 
     title: "星空夜景", 
     desc: "夜空星辰" 
   }
