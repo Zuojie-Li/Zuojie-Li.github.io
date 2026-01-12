@@ -68,53 +68,31 @@ Awards
 
 About Me
 ======
-<!-- 滚动相框组件 - 彩虹渐变标题版 -->
+<!-- 滚动相框组件 - 优化图片尺寸版 -->
 <style>
 .photo-gallery-container {
   background: white;
   border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   padding: 12px;
-  margin: 10px 0;
-  border-top: 3px solid #3498db;
+  margin: 8px 0;
+  border-top: 2px solid #3498db;
 }
 .gallery-title {
   font-size: 1.2rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, 
-      #ff6b6b,  /* 柔和红 */
-      #ffa726,  /* 柔和橙 */
-      #ffd93d,  /* 柔和黄 */
-      #4cd964,  /* 柔和绿 */
-      #5ac8fa,  /* 柔和蓝 */
-      #af52de,  /* 柔和紫 */
-      #ff6b6b   /* 回到柔和红 */
-  );
-  background-size: 200% 100%;
-  animation: softRainbow 10s ease-in-out infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
   text-align: center;
-  font-family: 'Helvetica Neue', sans-serif;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-  margin: 0 0 12px 0;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-}
-@keyframes softRainbow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  gap: 6px;
 }
 .photo-frame {
-  height: 240px;
+  height: 200px;
   background: #f8f9fa;
   border-radius: 6px;
-  padding: 6px;
+  padding: 8px;
   position: relative;
   overflow: hidden;
 }
@@ -131,12 +109,12 @@ About Me
   display: flex;
   height: 100%;
   gap: 15px;
-  animation: scrollGallery 35s linear infinite;
+  animation: scrollGallery 30s linear infinite;
 }
 .scrolling-photos:hover { animation-play-state: paused; }
 .photo-item {
   flex: 0 0 auto;
-  width: 210px;
+  width: 170px;
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
@@ -144,9 +122,9 @@ About Me
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   position: relative;
   z-index: 1;
-  padding: 4px;
+  padding: 8px;
   background: white;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #eaeaea;
 }
 .photo-item::before {
   content: '';
@@ -155,12 +133,12 @@ About Me
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
   pointer-events: none;
 }
 .photo-item:hover { 
-  transform: translateY(-10px) scale(1.03); 
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15), 0 0 0 2px rgba(52, 152, 219, 0.2);
+  transform: translateY(-12px) scale(1.03); 
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15), 0 0 0 3px rgba(52, 152, 219, 0.2);
   border-color: #3498db;
   z-index: 10;
 }
@@ -170,7 +148,7 @@ About Me
   border-radius: 3px;
   overflow: hidden;
   position: relative;
-  box-shadow: inset 0 0 3px rgba(0,0,0,0.08);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
 }
 .photo-img {
   width: 100%;
@@ -186,46 +164,36 @@ About Me
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.55));
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
   color: white;
-  padding: 6px;
+  padding: 8px;
   font-size: 0.8rem;
   text-align: center;
   transform: translateY(100%);
-  transition: transform 0.3s ease;
-  backdrop-filter: blur(1px);
+  transition: transform 0.4s ease;
+  backdrop-filter: blur(2px);
 }
 .photo-item:hover .photo-label { 
   transform: translateY(0); 
 }
 @keyframes scrollGallery {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-210px * 10 - 15px * 10)); }
+  100% { transform: translateX(calc(-170px * 10 - 15px * 10)); }
 }
 @media (max-width: 768px) {
-  .photo-frame { 
-    height: 180px; 
-    padding: 4px;
-  }
-  .photo-item { 
-    width: 150px; 
-    padding: 3px;
-  }
-  .gallery-title { 
-    font-size: 1rem; 
-    margin-bottom: 8px;
-    padding: 8px;
-  }
+  .photo-frame { height: 160px; }
+  .photo-item { width: 140px; }
+  .gallery-title { font-size: 1.1rem; margin-bottom: 8px; }
   .photo-item:hover { 
-    transform: translateY(-6px) scale(1.02); 
-    box-shadow: 0 10px 18px rgba(0,0,0,0.12), 0 0 0 1px rgba(52, 152, 219, 0.2);
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12), 0 0 0 2px rgba(52, 152, 219, 0.2);
   }
   .photo-item:hover .photo-img { 
     transform: scale(1.12); 
   }
   @keyframes scrollGallery {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-150px * 10 - 15px * 10)); }
+    100% { transform: translateX(calc(-140px * 10 - 15px * 10)); }
   }
 }
 </style>
@@ -233,11 +201,7 @@ About Me
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div class="photo-gallery-container">
-  <h2 class="gallery-title">
-    <i class="fas fa-images"></i>
-    Be true to yourself, and respect others.
-  </h2>
-  
+  <h2 class="gallery-title"><i class="fas fa-images"></i>相册</h2>
   <div class="photo-frame">
     <div class="scrolling-photos" id="scrollingPhotos"></div>
   </div>
@@ -251,47 +215,47 @@ const photos = [
     desc: "清晨山景" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop&auto=format", 
     title: "湖畔森林", 
     desc: "湖边森林" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop&auto=format", 
     title: "迷雾山脉", 
     desc: "云雾山峦" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop&auto=format", 
     title: "自然小径", 
     desc: "森林小路" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&h=300&fit=crop&auto=format", 
     title: "瀑布风光", 
     desc: "瀑布景色" 
   },
   { 
-    url: "https://Zuojie-Li.github.io/files/M1.jpg", 
+    url: "https://Zuojie-Li.github.io/files/M2.jpg", 
     title: "雪山峰顶", 
     desc: "雪山景观" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&auto=format", 
     title: "秋日森林", 
     desc: "秋天树林" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=400&h=300&fit=crop&auto=format", 
     title: "海岸日落", 
     desc: "日落美景" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&fit=crop&auto=format", 
     title: "冰川湖泊", 
     desc: "冰川湖" 
   },
   { 
-    url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=533&fit=crop&auto=format", 
+    url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=300&fit=crop&auto=format", 
     title: "星空夜景", 
     desc: "夜空星辰" 
   }
