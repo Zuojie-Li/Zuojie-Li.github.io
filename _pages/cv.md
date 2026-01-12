@@ -73,16 +73,16 @@ About Me
   .photo-gallery-container {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    margin-top: 30px;
-    border-top: 5px solid #3498db;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 15px 0 20px 0;
+    border-top: 4px solid #3498db;
   }
   
   .gallery-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #2c3e50;
-    margin-bottom: 20px;
+    margin: 0 0 15px 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -92,11 +92,11 @@ About Me
   
   .photo-frame {
     width: 100%;
-    height: 280px;
+    height: 250px;
     background: linear-gradient(145deg, #f0f0f0, #ffffff);
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
   }
@@ -107,7 +107,7 @@ About Me
     top: 0;
     left: 0;
     right: 0;
-    height: 8px;
+    height: 6px;
     background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c, #f39c12, #9b59b6);
     z-index: 2;
   }
@@ -115,7 +115,7 @@ About Me
   .scrolling-photos {
     display: flex;
     height: 100%;
-    gap: 20px;
+    gap: 18px;
     animation: scrollGallery 40s linear infinite;
   }
   
@@ -125,18 +125,18 @@ About Me
   
   .photo-item {
     flex: 0 0 auto;
-    width: 220px;
+    width: 200px;
     height: 100%;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
   }
   
   .photo-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
   }
   
   .photo-img {
@@ -157,8 +157,8 @@ About Me
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 8px;
+    font-size: 0.85rem;
     text-align: center;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -171,36 +171,36 @@ About Me
   .controls {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 12px;
+    margin-top: 15px;
   }
   
   .control-btn {
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+    gap: 6px;
+    box-shadow: 0 3px 5px rgba(52, 152, 219, 0.2);
   }
   
   .control-btn:hover {
     background-color: #2980b9;
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 5px 7px rgba(52, 152, 219, 0.3);
   }
   
   .photo-counter {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 12px;
     color: #7f8c8d;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   
   @keyframes scrollGallery {
@@ -208,17 +208,38 @@ About Me
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-220px * 10 - 20px * 10));
+      transform: translateX(calc(-200px * 10 - 18px * 10));
     }
   }
   
   @media (max-width: 768px) {
+    .photo-gallery-container {
+      padding: 15px;
+      margin: 10px 0 15px 0;
+    }
+    
+    .gallery-title {
+      font-size: 1.4rem;
+      margin: 0 0 12px 0;
+    }
+    
     .photo-frame {
-      height: 220px;
+      height: 200px;
+      padding: 10px;
     }
     
     .photo-item {
-      width: 180px;
+      width: 160px;
+    }
+    
+    .controls {
+      margin-top: 12px;
+      gap: 10px;
+    }
+    
+    .control-btn {
+      padding: 7px 14px;
+      font-size: 0.85rem;
     }
     
     @keyframes scrollGallery {
@@ -226,7 +247,7 @@ About Me
         transform: translateX(0);
       }
       100% {
-        transform: translateX(calc(-180px * 10 - 20px * 10));
+        transform: translateX(calc(-160px * 10 - 18px * 10));
       }
     }
   }
