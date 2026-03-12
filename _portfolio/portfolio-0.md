@@ -10,4 +10,4 @@ The PSMA-targeting agent AuK aims to overcome renal hyperuptake in prostate canc
 
 [View Online](https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275)
 
-![高清原图在线查看](https://Zuojie-Li.github.io/files/wallpape3.png "高清原图在线查看")
+![高清原图在线查看](https://Zuojie-Li.github.io/files/wallpape3.jpg "高清原图在线查看")
