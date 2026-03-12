@@ -114,7 +114,7 @@ redirect_from:
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
         <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
-          <img src="https://Zuojie-Li.github.io/files/TOC3_1.jpg" alt="J Med Chem. 2025,ASAP" 
+          <img src="https://Zuojie-Li.github.io/files/TOC3_1.jpg" alt="J Med Chem. 2026,69(5),5887–5900." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
         <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem. 2025,ASAP</p>
