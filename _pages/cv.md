@@ -269,28 +269,28 @@ const photos = [
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M3.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "樱花园" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M4.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "海晏堂" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M5.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "玉渊潭" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M6.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "黄花阵" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M7.jpg", 
-    title: "", 
-    desc: "" 
+    title: "西安", 
+    desc: "钟楼" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M2.jpg", 
@@ -299,18 +299,18 @@ const photos = [
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M8.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "中关村" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M9.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "西洋楼" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M10.jpg", 
-    title: "", 
-    desc: "" 
+    title: "北京", 
+    desc: "圆明园" 
   }
 ];
 
