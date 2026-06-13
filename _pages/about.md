@@ -37,7 +37,7 @@ redirect_from:
 * 2023.05 北京师范大学第四届研究生学术会议墙报一等奖
 * 2025.04 第十七届全国放射性药物与标记化合物学术交流会优秀壁报
 * 2025.05 原子高科博士生奖学金
-* 2026.06 第七届核化学与放射化学会议高质量墙报
+* 2026.06 第七届全国核化学与放射化学会议高质量墙报
 
 <div style="width: 100%; overflow: hidden; margin-top: 20px; padding: 15px 0 10px 0; background-color: #ffffff; border-top: 1px solid #eee;">
   <!-- 图片预加载区域（隐藏） -->
