@@ -48,7 +48,7 @@ Skills
 
 Publications (1st. author)
 ======
-* J Med Chem, 2026, 69(5),  5887–5900.
+* J Med Chem, 2026, 69(5),  5887–5900.（Front Cover）
 * J Med Chem, 2025, 68(21), 23620-23631.
 * J Med Chem, 2024, 67(24), 21644-21670.
 * J Med Chem, 2024, 67(23), 21617-21628.
