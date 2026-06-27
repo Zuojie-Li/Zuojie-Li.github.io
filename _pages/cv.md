@@ -11,9 +11,10 @@ redirect_from:
 
 Basic
 ======
-* Born: December 1996​
+* Born: December 1996
+* Native place: Tai'an, Shandong Province​
 * party: Member of the Communist Party of China
-* Workplace: Postdoc. Key Laboratory of Radiopharmaceuticals / Beam Technology of the Ministry of Education, Beijing Normal University
+* Workplace: Key Laboratory of Radiopharmaceuticals / Beam Technology of the Ministry of Education, Beijing Normal University
 
 Education
 ======
