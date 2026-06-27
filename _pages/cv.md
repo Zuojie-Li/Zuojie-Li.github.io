@@ -13,7 +13,7 @@ Basic
 ======
 * Born: December 1996
 * Native place: Tai'an, Shandong Province​
-* party: Member of the Communist Party of China
+* Party: Member of the Communist Party of China
 * Workplace: Key Laboratory of Radiopharmaceuticals / Beam Technology of the Ministry of Education, Beijing Normal University
 
 Education
