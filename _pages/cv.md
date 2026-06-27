@@ -66,6 +66,7 @@ Awards
 * The First Prize for Poster Presentation at the 4th Graduate Academic Conference of the College of Chemistry, Beijing Normal University
 * The Excellent Poster Award at the 17th National Academic Conference on Radiopharmaceuticals and Labeled Compounds，Xian
 * Atomic High-Tech Scholarship for Ph.D. Candidates
+* High-quality poster of the 7th National Youth Academic Symposium on Nuclear Chemistry and Radiochemistry
 
 About Me
 ======
