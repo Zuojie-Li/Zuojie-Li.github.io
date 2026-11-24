@@ -283,7 +283,7 @@ const photos = [
   { 
     url: "https://Zuojie-Li.github.io/files/M5.jpg", 
     title: "南京", 
-    desc: "中山陵" 
+    desc: "鸡鸣寺" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M6.jpg", 
