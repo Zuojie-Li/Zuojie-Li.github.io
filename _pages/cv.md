@@ -287,8 +287,8 @@ const photos = [
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M6.jpg", 
-    title: "曲阜", 
-    desc: "孔庙" 
+    title: "南京", 
+    desc: "梧桐大道" 
   },
   { 
     url: "https://Zuojie-Li.github.io/files/M7.jpg", 
