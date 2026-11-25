@@ -1,5 +1,5 @@
 ---
-title: "多聚靶向策略在[<sup>99m</sup>Tc]标记的前列腺癌探针中的研究"
+title: "多聚靶向策略在<sup>99m</sup>Tc标记的前列腺癌探针中的研究"
 collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-7
