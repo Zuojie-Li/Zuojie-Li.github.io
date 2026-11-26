@@ -47,6 +47,7 @@ redirect_from:
 <div style="width: 100%; overflow: hidden; margin-top: 20px; padding: 15px 0 10px 0; background-color: #ffffff; border-top: 1px solid #eee;">
   <!-- 图片预加载区域（隐藏） -->
   <div style="display: none;">
+    <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="预加载图片6">
     <img src="https://Zuojie-Li.github.io/files/TOC3_1.jpg" alt="预加载图片1">
     <img src="https://Zuojie-Li.github.io/files/TOC4_1.jpg" alt="预加载图片2">
     <img src="https://Zuojie-Li.github.io/files/TOC1_1.jpg" alt="预加载图片3">
@@ -60,6 +61,17 @@ redirect_from:
   </h3>
   
   <div class="scrolling-images" style="display: flex; animation: scroll 35s linear infinite; white-space: nowrap; flex-wrap: nowrap; padding: 2px 0;">
+  <!-- 图片6：新插入，放在最前端 -->
+    <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.6c0315610.1021" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
+          <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="J Med Chem.  2026, ASAP" 
+               style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
+        </div>
+        <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem.  2026, ASAP.</p>
+      </a>
+    </div>
+    
     <!-- 图片1：带超链接 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
@@ -115,7 +127,18 @@ redirect_from:
       </a>
     </div>
     
-    <!-- 重要：以下重复上面的5个图片块以实现无缝滚动效果 -->
+    <!-- 重要：以下重复上面的6个图片块以实现无缝滚动效果 -->
+    <!-- 重复图片6：新插入，放在最前端 -->
+    <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.6c0315610.1021" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+        <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
+          <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="J Med Chem.  2026, ASAP" 
+               style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
+        </div>
+        <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem.  2026, ASAP.</p>
+      </a>
+    </div>
+
     <!-- 重复图片1 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
       <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c03275" target="_blank" style="text-decoration: none; color: inherit; display: block;">
@@ -182,8 +205,8 @@ redirect_from:
   100% {
     /* 精确计算：滚动5张图片的总宽度 */
     /* 每张图片：240px宽度 + 36px左右边距 = 276px */
-    /* 5张图片：276px × 5 = 1380px */
-    transform: translateX(-1380px);
+    /* 5张图片：276px × 6 = 1656px */
+    transform: translateX(-1656px);
   }
 }
 
@@ -268,8 +291,8 @@ redirect_from:
       transform: translateX(0);
     }
     100% {
-      /* 响应式计算：5 × (180px + 24px) = 1020px */
-      transform: translateX(-1020px);
+      /* 响应式计算：6 × (180px + 24px) = 1224px */
+      transform: translateX(-1224px);
     }
   }
   
