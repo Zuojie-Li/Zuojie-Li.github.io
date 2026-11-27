@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2025-07-02-paper-title-number-6
 excerpt: 'Zuojie Li, Ziqing Zhao, Peiwen Han, Yu Qian, Jianyong Jiang, Junbo Zhang'
 date: 2026-11-12
-venue: 'Journal of Medicinal Chemistry'
+venue: #'Journal of Medicinal Chemistry'
 slidesurl: 'https://Zuojie-Li.github.io/files/slides6.pdf'
 paperurl: 'https://Zuojie-Li.github.io/files/paper8.pdf'
 bibtexurl: #'http://academicpages.github.io/files/bibtex1.bib'
