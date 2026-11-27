@@ -7,7 +7,7 @@ excerpt: 'Zuojie Li, Ziqing Zhao, Peiwen Han, Yu Qian, Jianyong Jiang, Junbo Zha
 date: 2026-11-12
 venue: 'Journal of Medicinal Chemistry'
 slidesurl: 'https://Zuojie-Li.github.io/files/slides6.pdf'
-paperurl: 'https://Zuojie-Li.github.io/files/paper7.pdf'
+paperurl: 'https://Zuojie-Li.github.io/files/paper8.pdf'
 bibtexurl: #'http://academicpages.github.io/files/bibtex1.bib'
 citation: 'J Med Chem. 2026,69(22),28015–28028.'
 ---
