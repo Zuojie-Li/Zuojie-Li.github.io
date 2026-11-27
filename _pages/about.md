@@ -63,12 +63,12 @@ redirect_from:
   <div class="scrolling-images" style="display: flex; animation: scroll 35s linear infinite; white-space: nowrap; flex-wrap: nowrap; padding: 2px 0;">
   <!-- 图片6：新插入，放在最前端 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
-      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.6c0315610.1021" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.6c03156" target="_blank" style="text-decoration: none; color: inherit; display: block;">
         <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
-          <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="J Med Chem.  2026, ASAP" 
+          <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="J Med Chem. 2026,69(22),28015–28028." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
-        <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem.  2026, ASAP.</p>
+        <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem. 2026,69(22),28015–28028.</p>
       </a>
     </div>
     
@@ -130,12 +130,12 @@ redirect_from:
     <!-- 重要：以下重复上面的6个图片块以实现无缝滚动效果 -->
     <!-- 重复图片6：新插入，放在最前端 -->
     <div style="min-width: 240px; margin: 0 18px; text-align: center; flex-shrink: 0; padding: 0;">
-      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.6c0315610.1021" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jmedchem.6c03156" target="_blank" style="text-decoration: none; color: inherit; display: block;">
         <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0;">
-          <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="J Med Chem.  2026, ASAP" 
+          <img src="https://Zuojie-Li.github.io/files/TOC6_1.jpg" alt="J Med Chem. 2026,69(22),28015–28028." 
                style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; display: block;">
         </div>
-        <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem.  2026, ASAP.</p>
+        <p style="margin: 8px 0 0 0; font-weight: 500; font-size: 15px; line-height: 1.3; padding: 0;">J Med Chem. 2026,69(22),28015–28028.</p>
       </a>
     </div>
 
