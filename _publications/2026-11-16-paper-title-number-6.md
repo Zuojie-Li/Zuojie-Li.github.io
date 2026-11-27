@@ -3,7 +3,7 @@ title: "Design, Synthesis, and Evaluation of  <sup>99m</sup>Tc-Labeled PSMA-Targ
 collection: publications
 category: manuscripts
 permalink: /publication/2025-07-02-paper-title-number-6
-excerpt: #'Zuojie Li, Ziqing Zhao, Peiwen Han, Yu Qian, Jianyong Jiang, Junbo Zhang'
+excerpt: 'Zuojie Li, Ziqing Zhao, Peiwen Han, Yu Qian, Jianyong Jiang, Junbo Zhang'
 date: 2026-11-12
 venue: 'Journal of Medicinal Chemistry'
 slidesurl: 'https://Zuojie-Li.github.io/files/slides6.pdf'
